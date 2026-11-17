@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ssh-certificate-authority-validator"
+version = "1.0.0"
+description = "Parse and validate OpenSSH certificates against trusted CA keys and policy"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["cryptography>=42"]
+
+[tool.setuptools]
+packages = ["ssh_cert_validator"]
+
+[tool.setuptools.package-data]
+ssh_cert_validator = ["py.typed"]
